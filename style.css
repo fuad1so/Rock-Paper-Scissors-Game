@@ -74,9 +74,7 @@ label:hover{
   z-index: 100;
   transition: all .65s ease-out;
 }
-input{
-  display: none;
-}
+
 
 
 
