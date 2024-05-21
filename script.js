@@ -74,3 +74,43 @@
         }
        
     }
+
+
+
+ 
+    function reversetext(name){
+      var arrString = name.split(""); // convert the name to arry 
+      var revArrString = arrString.reverse(); // reverse the arr 
+      var newName = revArrString.join(""); // recreacte new sting from the reverse array 
+      return newName; 
+
+    }
+
+    function reverseArray(arr) {
+      var newArr = [] // create a new arr to make the amendment 
+      for( i=1 ; arr.length-i>= 0 ; i++){
+       
+        let lastValue = arr[arr.length-i]  // store the last value 
+       
+        newArr.push(lastValue)  // save the last value in the new arr 
+        console.log(newArr)
+      }
+      return newArr;
+    }
+
+   var arr= [
+      { item: "irn bru", price: 3.25, stock: 50 },
+      { item: "fanta", price: 3.98, stock: 45 },
+      { item: "diet coke", price: 10.40, stock: 100 }, 
+      { item: "7up", price: 1.99, stock: 10 }, 
+   ]
+
+   function mostExpensiveItem(arr) {
+    const newArr = arr.sort((a, b) => a.price * a.stock - b.price * b.stock);  // resort the items relie on the cost 
+    return newArr[arr.length-1];
+   }
+
+console.log( mostExpensiveItem(arr))
+
+
+
