@@ -22,15 +22,15 @@ document.getElementById(`${computerOption}`).checked = true;
 console.log("userOption;",userOption)
 
 if(userOption===computerOptionNow ){
-    console.log("it's a tie")
+console.log("it's a tie")
 } else if (  userOption=="rock" && computerOptionNow== "scissors"  ) {
 console.log(" you win")}
 else if (  userOption=="paper" && computerOptionNow== "rock"  ) {
-    console.log(" you win")}
+console.log(" you win")}
 else if (  userOption=="scissors" && computerOptionNow== "paper"  ) {
-        console.log(" you win")}
-        else {
-            console.log(" you lost")
+console.log(" you win")}
+else {
+console.log(" you lost")
         }
 
 } 
