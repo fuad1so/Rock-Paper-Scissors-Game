@@ -2,6 +2,7 @@
 const rockRadio = document.getElementById("rock"); 
 const paperRadio = document.getElementById("paper"); 
 const scissosRadio = document.getElementById("scissors"); 
+const result = document.getElementById("result")
 
 
 
@@ -22,13 +23,22 @@ document.getElementById(`${computerOption}`).checked = true;
 console.log("userOption;",userOption)
 
 if(userOption===computerOptionNow ){
-console.log("it's a tie")
+    result.style.cssText="display: block;"
+    result.innerText=" it's a tie "
+
+    
 } else if (  userOption=="rock" && computerOptionNow== "scissors"  ) {
-console.log(" you win")}
+    result.style.cssText="display: block;"
+    result.innerText=" you win "
+}
 else if (  userOption=="paper" && computerOptionNow== "rock"  ) {
-console.log(" you win")}
+    result.style.cssText="display: block;"
+    result.innerText=" you win "
+}
 else if (  userOption=="scissors" && computerOptionNow== "paper"  ) {
-console.log(" you win")}
+    result.style.cssText="display: block;"
+    result.innerText=" you win "
+}
 else {
 console.log(" you lost")
         }
