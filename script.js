@@ -63,7 +63,8 @@ scissosRadio.addEventListener("change",  function(){
 } )
 
 
-
+let x=Math.random()
+console.log("X=",x)
 
 
 
