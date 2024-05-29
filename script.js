@@ -49,23 +49,14 @@ console.log(" you lost")
 
 rockRadio.addEventListener("change",  function(){
     playGame("rock")
-   
-
 } )
 
 paperRadio.addEventListener("change",  function(){
     playGame("paper")
-    
 } )
 scissosRadio.addEventListener("change",  function(){
     playGame("scissors")
-   
 } )
-
-
-let x=Math.random()
-console.log("X=",x)
-
 
 
 // function playGame(userOption) {
