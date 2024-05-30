@@ -23,20 +23,20 @@ document.getElementById(`${computerOption}`).checked = true;
 console.log("userOption;",userOption)
 
 if(userOption===computerOptionNow ){
-    result.style.cssText="display: block;"
+    result.style.cssText="font-size: 70px;"
     result.innerText=" it's a tie "
 
     
 } else if (  userOption=="rock" && computerOptionNow== "scissors"  ) {
-    result.style.cssText="display: block;"
+    result.style.cssText="font-size: 70px;"
     result.innerText=" you win "
 }
 else if (  userOption=="paper" && computerOptionNow== "rock"  ) {
-    result.style.cssText="display: block;"
+    result.style.cssText="font-size: 70px;"
     result.innerText=" you win "
 }
 else if (  userOption=="scissors" && computerOptionNow== "paper"  ) {
-    result.style.cssText="display: block;"
+    result.style.cssText="font-size: 70px;"
     result.innerText=" you win "
 }
 else {
